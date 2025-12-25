@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar's Class</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .App {
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+  }
+   
+
+
+
+  table,tr, th, td {
+    border: 2px solid black;
+    padding: 10px;
+  }
+  
+    </style>
+</head>
+<body>
+    
+    <div class="App">
+        <h1>Mailbox Lab API Documentation</h1>
+        <br>
+        <br>
+        <h2> <a href="/mailboxes">Link to All Mailboxes</a></h2>
+        <br>
+        <p><b>Base Url: </b>https://omar-ga-class.onrender.com</p>
+
+        <h2>Endpoints:</h2>
+        <table>
+            <tr>
+                <th>Endpoints</th>
+                <th>HTTP Method</th>
+                <th>Response Data Type</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>/mailboxes</td>
+                <td>GET</td>
+                <td>[]</td>
+                <td>This endpoint returns an array of all the mailboxes stored within the API</td>
+            </tr>
+            <tr>
+                <td>/mailboxes/:id</td>
+                <td>GET</td>
+                <td>{}</td>
+                <td>This endpoint returns Object representing only 1 mailbox</td>
+            </tr>
+            <tr>
+                <td>/mailboxes</td>
+                <td>POST</td>
+                <td>{}</td>
+                <td>This endpoint is used to create a new mailbox. It will return an object representing the new mailbox that was created</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
